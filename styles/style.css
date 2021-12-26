@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#scroll {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 2rem;
+  align-items: center;
+}
+
+#scroll p {
+  font-weight: 600;
+  width: 100%;
+  animation: marquee 40s linear infinite;
+}
+
+#scroll p:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#title {
+  color: #9C9473;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  height: 3em;
+  padding-top: 0.5rem;
+}
+
+#navbar {
+  background-color: #aca488;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 3rem;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  padding-left: 0;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black
+
+}
+
+main {
+  background-color: #837E5D;
+  padding-top: 2rem;
+}
+
+#fondateur {
+  display: flex;
+}
+
+.title {
+  text-align: left;
+  padding-left: 6%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#fondateur .content {
+  width: 70%;
+  margin: 3rem 6rem;
+}
+
+#fondateur aside {
+  display: flex;
+  width: 30%;
+}
+
+@media only screen and (max-width: 700px) {
+  #fondateur aside {
+    display: none;
+  }
+}
+
+#fondateur blockquote {
+ padding-top: 2rem;
+}
+
+#fondateur figcaption {
+  padding-top: 2rem;
+}
