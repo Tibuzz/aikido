@@ -70,7 +70,7 @@ main {
   padding-top: 2rem;
 }
 
-#fondateur {
+.subsection {
   display: flex;
 }
 
@@ -81,7 +81,7 @@ main {
   margin-bottom: 1rem;
 }
 
-#fondateur .content {
+.content {
   width: 70%;
   margin: 3rem 6rem;
 }
@@ -89,6 +89,7 @@ main {
 #fondateur aside {
   display: flex;
   width: 30%;
+  margin-right: 3rem;
 }
 
 @media only screen and (max-width: 700px) {
@@ -104,3 +105,14 @@ main {
 #fondateur figcaption {
   padding-top: 2rem;
 }
+
+#objectifs aside {
+  display: flex;
+  width: 100rem;
+   border: 2px solid rgb(70, 20, 20);
+}
+
+#objectifs embed {
+  height: 9em;
+}
+
