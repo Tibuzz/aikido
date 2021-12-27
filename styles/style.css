@@ -149,6 +149,24 @@ blockquote {
   }
 }
 
+#club {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+  row-gap: 10%;
+}
+
+#club h2 {
+  grid-area: 1/2/2/3;
+}
+
+#prof {
+  grid-area: 2/1/4/2;
+}
+
+#bureau {
+  grid-area: 2/3/6/4;
+}
+
 footer {
   background-color: black;
   color: white;
