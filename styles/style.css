@@ -35,7 +35,8 @@
 }
 
 #title {
-  color: #9C9473;
+  color: white;
+  background-color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   height: 3em;
@@ -43,7 +44,7 @@
 }
 
 #navbar {
-  background-color: #aca488;
+  background-color: black;
   display: flex;
   align-items: center;
   position: sticky;
@@ -61,12 +62,18 @@ ul {
 
 #navbar a {
   text-decoration: none;
-  color: black
-
+  color: white;
 }
 
 main {
-  background-color: #837E5D;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),
+  url('../resources/club.jpeg');
+                    ;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: top left ;
+  background-attachment: local;
+  /*background-color: whitesmoke;*/
   padding-top: 2rem;
 }
 
@@ -76,43 +83,47 @@ main {
 
 .title {
   text-align: left;
-  padding-left: 6%;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.content {
-  width: 70%;
+article {
+  width: 60%;
   margin: 3rem 6rem;
 }
 
-#fondateur aside {
+article .content {
+   text-align: justify;
+   padding-left: 2rem;
+}
+
+aside {
   display: flex;
-  width: 30%;
+  width: 40%;
   margin-right: 3rem;
+  margin-top: 5rem;
 }
 
-@media only screen and (max-width: 700px) {
-  #fondateur aside {
-    display: none;
-  }
+#fondateur img {
+  border: 2px solid white;
+  border-radius: 25%;
 }
-
 #fondateur blockquote {
  padding-top: 2rem;
+ padding-left: 1rem;
 }
 
 #fondateur figcaption {
   padding-top: 2rem;
 }
 
-#objectifs aside {
-  display: flex;
-  width: 100rem;
-   border: 2px solid rgb(70, 20, 20);
-}
-
 #objectifs embed {
   height: 9em;
+}
+
+@media only screen and (max-width: 700px) {
+  aside {
+    display: none;
+  }
 }
 
