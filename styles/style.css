@@ -157,15 +157,16 @@ blockquote {
 }
 
 #club {
-  display: grid;
-  grid-template: repeat(5, 1fr) / repeat(3, 1fr);
-  row-gap: 10%;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem auto ;
+  padding-bottom: 2rem;
   border-bottom: 5px double black;
+  width: 90%;
 }
 
 @media only screen and (max-width: 700px) {
   #club {
-    display: flex;
     flex-direction: column;
   }
   #prof {
@@ -174,34 +175,48 @@ blockquote {
   }
 }
 
-
-#club h2 {
-  grid-area: 1/2/2/3;
-}
-
-#prof {
-  grid-area: 2/1/4/2;
-}
-
-#bureau {
-  grid-area: 2/3/6/4;
-}
-
 #cours {
   display: flex;
   border-bottom: 5px double black;
-  margin: 0 10rem;
+  width: 80%;
+  margin: 2rem auto;
+  justify-content: space-around;
+}
+
+#horaires {
+  height:fit-content;
+  margin-top: 6rem;
 }
 
 #horaires, #tarifs {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 1rem;
+  width: 25%;
 }
 
 #enfants {
   background-color: white;
   color: black;
+}
+
+#manuel {
+  margin: 0 auto;
+  width: 60%;
+}
+
+#manuel h3 {
+  margin: 2rem;
+  text-decoration: underline;
+}
+
+#manuel p {
+  line-height: 1.8;
+}
+
+#manuel a {
+  color: black;
+  font-weight: 700;
 }
 
 footer {
