@@ -95,6 +95,12 @@ article {
   margin: 3rem 6rem;
 }
 
+@media only screen and (max-width:700px) {
+ article {
+   margin: 3rem auto;
+ } 
+}
+
 article .content {
    text-align: justify;
    padding-left: 2rem;
