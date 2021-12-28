@@ -200,6 +200,16 @@ blockquote {
   color: black;
 }
 
+@media only screen and (max-width: 700px) {
+  #horaires, #tarifs {
+    width: 50%;
+  }
+  
+  #enfants {
+    font-size: small;
+  }
+}
+
 #manuel {
   margin: 0 auto;
   width: 60%;
@@ -217,6 +227,15 @@ blockquote {
 #manuel a {
   color: black;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 700px) {
+  #manuel {
+    width: 80%;
+  }
+  #manuel p {
+    line-height: normal;
+  }
 }
 
 footer {
@@ -239,6 +258,16 @@ address {
   width: 33%;
 }
 
+@media only screen and (max-width: 700px) {
+  #contact {
+    letter-spacing: normal;
+  }
+  
+  #adresse {
+    font-size: smaller;
+  }  
+}
+
 #mentions {
   align-self: flex-end;
   font-size: smaller;
@@ -256,5 +285,5 @@ address img {
 #phone {
   width: 1.2rem;
   height: auto;
-  padding-bottom: 4.5%;
+  padding-bottom: 0.9rem;
 }
