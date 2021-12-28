@@ -201,8 +201,13 @@ blockquote {
 }
 
 @media only screen and (max-width: 700px) {
+  #cours {
+    flex-direction: column;
+  }
+
   #horaires, #tarifs {
-    width: 50%;
+    width: 80%;
+    margin-top: 0;
   }
   
   #enfants {
@@ -264,8 +269,13 @@ address {
   }
   
   #adresse {
-    font-size: smaller;
-  }  
+    font-size: 0.6rem;
+    width: 50%;
+  } 
+  
+  mentions {
+    display: none;
+  }
 }
 
 #mentions {
