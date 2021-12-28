@@ -20,6 +20,15 @@ if (activeTab.includes('index')) {
   link.style.color = 'black';
 
   // Uncolor it on :hover
+  let navBar = document.getElementById('navbar');
+  navBar.onmouseover = function(e) {
+    link.style.backgroundColor = 'black';
+    link.style.color = 'white';
+  }
+  navBar.onmouseleave = function(e) {
+    link.style.backgroundColor = 'white';
+    link.style.color = 'black';
+  }
   
 
 

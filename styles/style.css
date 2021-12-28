@@ -58,6 +58,7 @@ h1 {
   position: sticky;
   top: 0;
   height: 3rem;
+  border-bottom: 1px solid black;
 }
 
 ul {
@@ -71,7 +72,9 @@ ul {
 #navbar a {
   text-decoration: none;
   color: white;
-  padding: 0 0.3175rem 0.6875rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid white;
+  border-radius: 15px;
   transition-property: background-color color;
   transition-duration: 1s;
 }
