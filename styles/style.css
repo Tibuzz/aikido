@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather&family=Titillium+Web&display=swap');
+
+/* General Css */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
   box-sizing: border-box;
 }
 
+/* Scroll bar on top of screen */
 #scroll {
   position: relative;
   display: flex;
@@ -47,6 +50,7 @@ h1 {
   font-family: 'Merriweather', serif;
 }
 
+/* Navigation Bar */
 #navbar {
   background-color: black;
   display: flex;
@@ -67,8 +71,18 @@ ul {
 #navbar a {
   text-decoration: none;
   color: white;
+  padding: 0 0.3175rem 0.6875rem;
+  transition-property: background-color color;
+  transition-duration: 1s;
 }
 
+/* Navigation bar transition on hover*/
+#navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Main content */
 main {
   background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),
   url('../resources/club.jpeg');
@@ -156,6 +170,7 @@ blockquote {
   }
 }
 
+/* Club Page */
 #club {
   display: flex;
   justify-content: space-around;
@@ -243,6 +258,7 @@ blockquote {
   }
 }
 
+/* Footer */
 footer {
   background-color: black;
   color: white;
