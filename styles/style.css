@@ -230,6 +230,24 @@ address {
   align-items: center;
 }
 
+#adresse {
+  width: 33%;
+}
+
+#contact {
+  letter-spacing: 1rem;
+  width: 33%;
+}
+
+#mentions {
+  align-self: flex-end;
+  font-size: smaller;
+}
+
+#mentions a {
+  color: white;
+}
+
 address img {
   width: 3rem;
   height: auto;
@@ -238,6 +256,5 @@ address img {
 #phone {
   width: 1.2rem;
   height: auto;
-  margin-bottom: 20%;
+  padding-bottom: 4.5%;
 }
-
