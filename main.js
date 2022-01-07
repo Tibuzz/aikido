@@ -8,8 +8,8 @@ let link;
 
 // Color the active tab name
 
-if (activeTab.includes('index')) {
-   link = document.getElementById('index-link');
+if (activeTab.includes('aikido.html')) {
+   link = document.getElementById('aikido-link');
 } else if (activeTab.includes('club')) {
   link = document.getElementById('club-link');
 } else if (activeTab.includes('photos')) {
