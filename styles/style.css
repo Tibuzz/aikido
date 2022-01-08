@@ -207,6 +207,10 @@ blockquote {
     margin-top: 2rem;
     margin-bottom: 2rem
   }
+
+  #club #prof embed {
+  display: none;
+}
 }
 
 #cours {
@@ -220,7 +224,7 @@ blockquote {
 #cours img {
   height: 10rem;
   width: auto;
-  align-self: center;
+  align-self: center;/
 }
 
 #horaires {
