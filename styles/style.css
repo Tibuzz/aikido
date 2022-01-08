@@ -133,7 +133,7 @@ aside {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: 5%;
+  border-radius: 4rem;
   background-color: rgba(0,0,0,0.7);
 }
 
@@ -141,6 +141,14 @@ blockquote {
  padding-right: 1rem;
  padding-left: 1rem;
  color: white;
+}
+
+#img-accueil {
+  margin-top: 4rem;
+  height: 16rem;
+  width: auto;
+  border: 2px solid rgb(80, 52, 52);
+  border-radius: 2rem;
 }
 
 #fondateur img {
@@ -157,6 +165,14 @@ blockquote {
 #fondateur figcaption {
   padding-top: 1rem;
   color: white;
+}
+
+#objectifs {
+  flex-direction: row-reverse;
+}
+
+#objectifs aside {
+  margin-left: 4rem;
 }
 
 #objectifs embed {
@@ -199,6 +215,12 @@ blockquote {
   width: 80%;
   margin: 2rem auto;
   justify-content: space-around;
+}
+
+#cours img {
+  height: 10rem;
+  width: auto;
+  align-self: center;
 }
 
 #horaires {
