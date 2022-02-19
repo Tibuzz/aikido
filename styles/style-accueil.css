@@ -33,7 +33,7 @@ p {
   margin-top: 8rem;
   border-radius: 10% / 30%;
   background-color: rgb(98, 19, 5);
-  
+  opacity: 0;
 }
 
 #button:hover {

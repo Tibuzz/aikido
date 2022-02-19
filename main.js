@@ -1,7 +1,7 @@
 
 
 // Get the address of active tab 
-let activeTab = window.location.pathname;
+const activeTab = window.location.pathname;
 
 // Declare the link box to color
 let link;
@@ -21,6 +21,23 @@ if (activeTab.includes('aikido.html')) {
   link.style.backgroundColor = 'white';
   link.style.color = 'black';
 
+// Afficher/masquer les mentions légales
+
+const cadre = document.getElementById('cadreMentionsLégales');
+const mentionsLink = document.getElementById('mentions');
+const main = document.querySelector('main');
+
+const hide = () => {
+  if (getComputedStyle(cadre).display != "none") {
+    cadre.style.display = "none";
+  } else cadre.style.display = "block";
+};
+
+mentionsLink.addEventListener('click', hide);
+main.addEventListener('click', () => {
+  if (getComputedStyle(cadre).display != "none") {
+    cadre.style.display = "none";
+  }});
   
 
 

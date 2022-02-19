@@ -39,6 +39,8 @@
 }
 
 #title {
+  z-index: 2;
+  position: relative;
   color: white;
   background-color: black;
   text-align: center;
@@ -59,6 +61,7 @@ h1 {
   top: 0;
   height: 3rem;
   border-bottom: 1px solid black;
+  z-index: 2;
 }
 
 ul {
@@ -95,6 +98,9 @@ main {
   background-position: top left ;
   background-attachment: local;
   padding-top: 2rem;
+  z-index: 0;
+  position: relative;
+  min-height: 100%;
 }
 
 .subsection {
@@ -124,7 +130,9 @@ article .content {
    padding-left: 2rem;
 }
 
-aside {
+/* Aikido page */
+
+#aikido aside {
   display: flex;
   width: 40%;
   height:40%;
@@ -183,11 +191,18 @@ blockquote {
   font-size: 0.8rem;
 }
 
+#photo-page-aikido {
+  width: 10rem;
+  height: auto;
+  align-self: center;
+}
+
 @media only screen and (max-width: 700px) {
   aside {
     display: none;
   }
 }
+
 
 /* Club Page */
 #club {
@@ -287,6 +302,98 @@ blockquote {
   }
 }
 
+/* Infos/stages page*/
+
+#infos {
+  display: flex;
+  flex-direction: column;
+}
+
+#infos h1 {
+  margin-top: 3rem;
+}
+
+.grades {
+  display: flex;
+  justify-content: space-around;
+}
+
+#infos article {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+  width: 25%;
+}
+
+#citation-du-mois {
+  background-color: rgba(0,0,0,0.7);
+  width: 60%;
+  display: flex;
+  align-self: center;
+}
+
+#citation-du-mois aside {
+  position: relative;
+  top: 1rem;
+}
+
+#citation-du-mois img {
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#citation-du-mois figcaption {
+  float: right;
+}
+
+#cadreMentionsLégales {
+  position: fixed;
+  z-index: 1;
+  background-image: url('../resources/photos/cadreAiki.jpeg');
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 80%;
+  bottom: 85px;
+  left: 25%;
+  display: none;
+  overflow: scroll;
+}
+
+/*
+#bouton-fermer {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(95, 121, 170, 0.8);
+}
+*/
+
+#texteMentions {
+  margin: 4rem auto 1rem;
+  width: 50%;
+  line-height: 0.9rem;
+}
+
+@media only screen and (max-width: 700px) {
+  #cadreMentionsLégales {
+    background-image: none;
+    width: 100%;
+    left: 0;
+  }
+  #texteMentions {
+    margin: O auto;
+  }
+}
+
+hr {
+  width: 85%;
+  margin: 1em auto;
+}
+
 /* Footer */
 footer {
   background-color: black;
@@ -324,12 +431,14 @@ address {
 }
 
 #mentions {
-  align-self: flex-end;
   font-size: smaller;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-#mentions a {
-  color: white;
+#mentions:hover {
+  text-decoration: none;
 }
 
 address img {
