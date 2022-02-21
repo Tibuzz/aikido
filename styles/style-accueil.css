@@ -27,6 +27,22 @@ p {
   margin: 0 auto 2rem;
 }
 
+@media only screen and (max-width: 700px) {
+  h1 {
+    margin-bottom: 2rem;
+  }
+  p {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  #button {
+    margin-top: 10px;
+  }
+  #2 {
+    margin-bottom: 0px;
+  }
+}
+
 #button {
   width: 6rem;
   height: 3rem;

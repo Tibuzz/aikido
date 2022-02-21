@@ -318,11 +318,24 @@ blockquote {
   justify-content: space-around;
 }
 
+@media only screen and (max-width: 700px) {
+  .grades {
+    flex-direction: column;
+  }
+}
+
 #infos article {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
   width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+
+  #infos article {
+    width: 85%;
+  }
 }
 
 #citation-du-mois {
@@ -346,6 +359,33 @@ blockquote {
   float: right;
 }
 
+#infos article ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#infos article img {
+  height: 15rem;
+  width: auto;
+}
+#infos article figcaption {
+  font-size: 0.7rem;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+#photo-du-sensei {
+  height: 20rem;
+  margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  #photo-du-sensei {
+    width: 50%;
+    height: auto;
+  }
+}
+
 #cadreMentionsLégales {
   position: fixed;
   z-index: 1;
@@ -360,6 +400,8 @@ blockquote {
   display: none;
   overflow: scroll;
 }
+
+
 
 /*
 #bouton-fermer {
