@@ -38,7 +38,22 @@ main.addEventListener('click', () => {
   if (getComputedStyle(cadre).display != "none") {
     cadre.style.display = "none";
   }});
-  
+
+
+// Supprimer titre et agrandir image dans page infos, stages
+ /*
+let affiche = document.getElementsByClassName('affiches');
+let containerAffiche = document.getElementsByClassName("cadre-affiches");
+
+const bigAffiche = () => {
+  affiche.forEach(affiche => {
+    affiche.style.display = "none";
+  })
+}
+
+containerAffiche.forEach(container => {
+  container.addEventListener('mouseover', bigAffiche);
+});*/
 
 
 

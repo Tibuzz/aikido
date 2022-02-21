@@ -198,7 +198,7 @@ blockquote {
 }
 
 @media only screen and (max-width: 700px) {
-  aside {
+  #aikido aside, #infos aside {
     display: none;
   }
 }
@@ -302,7 +302,7 @@ blockquote {
   }
 }
 
-/* Infos/stages page*/
+/* Page infos, infos section*/
 
 #infos {
   display: flex;
@@ -316,6 +316,9 @@ blockquote {
 .grades {
   display: flex;
   justify-content: space-around;
+  border-bottom: 5px double black;
+  width: 90%;
+  margin: 2rem auto;
 }
 
 @media only screen and (max-width: 700px) {
@@ -384,6 +387,98 @@ blockquote {
     width: 50%;
     height: auto;
   }
+}
+
+/* Page infos, stages section*/
+
+#stages {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#stages h2 {
+  font-family: 'Merriweather', serif;
+}
+
+#stages ul {
+  margin-top: 3rem;
+  justify-content: space-around;
+}
+
+#stages ul li {
+  background-color: rgba(83, 51, 51, 0.8);
+  border-radius: 10px;
+  padding: 1rem;
+}
+#stages ul li a {
+  color: black;
+}
+
+#stages ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#valideDan {
+  margin: 4rem;
+  background-color: black;
+  color: white;
+  width: 35%;
+  align-self: center;
+}
+
+#valideDan img {
+  width: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+}
+
+.cadre-affiches {
+  width: 25%;
+  height: 238px;
+  margin-right: 2rem; 
+}
+
+.affiches {
+  height: 75%;
+}
+
+.cadre-affiches:hover .affiches {
+  height: 100%;
+  width: auto;
+}
+
+.cadre-affiches h4 {
+  width: 70%;
+  height: 25%;
+  margin: 0 auto;
+  line-height: 0.9rem;
+}
+
+.cadre-affiches:hover h4, .cadre-affiches:hover h5 {
+  display: none;
+}
+
+.no-affiche {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.descriptif-stage {
+  color: red;
+}
+
+#logo-ceinture {
+  width:50%;
+  align-self: flex-end;
 }
 
 #cadreMentionsLégales {
