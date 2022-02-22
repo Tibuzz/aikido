@@ -30,7 +30,7 @@ const main = document.querySelector('main');
 const hide = () => {
   if (getComputedStyle(cadre).display != "none") {
     cadre.style.display = "none";
-  } else cadre.style.display = "block";
+  } else cadre.style.display = "flex";
 };
 
 mentionsLink.addEventListener('click', hide);
@@ -39,21 +39,6 @@ main.addEventListener('click', () => {
     cadre.style.display = "none";
   }});
 
-
-// Supprimer titre et agrandir image dans page infos, stages
- /*
-let affiche = document.getElementsByClassName('affiches');
-let containerAffiche = document.getElementsByClassName("cadre-affiches");
-
-const bigAffiche = () => {
-  affiche.forEach(affiche => {
-    affiche.style.display = "none";
-  })
-}
-
-containerAffiche.forEach(container => {
-  container.addEventListener('mouseover', bigAffiche);
-});*/
 
 
 

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather&family=Titillium+Web&display=swap');
+
+/* General Css */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Scroll bar on top of screen */
+#scroll {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 2rem;
+  align-items: center;
+}
+
+#scroll p {
+  font-weight: 600;
+  width: 100%;
+  animation: marquee 40s linear infinite;
+}
+
+#scroll p:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#title {
+  z-index: 2;
+  position: relative;
+  color: white;
+  background-color: black;
+  text-align: center;
+  height: 3em;
+  padding-top: 0.5rem;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+}
+
+/* Navigation Bar */
+#navbar {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 3rem;
+  border-bottom: 1px solid black;
+  z-index: 2;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  padding-left: 0;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  transition-property: background-color color;
+  transition-duration: 1s;
+}
+
+/* Navigation bar transition on hover*/
+#navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Main content */
+main {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),
+  url('../resources/club.jpeg');
+                    ;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: top left ;
+  background-attachment: local;
+  padding-top: 2rem;
+  z-index: 0;
+  position: relative;
+  min-height: 100%;
+}
+
+
+
+/* Mentions légales */
+
+#cadreMentionsLégales {
+  position: fixed;
+  z-index: 1;
+  background-image: url('../resources/photos/cadreAiki.jpeg');
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 33%;
+  height: 75%;
+  bottom: 84px;
+  left: 33%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#texteMentions {
+  margin: 0 auto;
+  width: 80%;
+  line-height: 0.9rem;
+}
+
+@media only screen and (max-width: 700px) {
+  #cadreMentionsLégales {
+    background-image: none;
+    width: 100%;
+    left: 0;
+  }
+  #texteMentions {
+    margin: O auto;
+  }
+}
+
+#texteMentions hr {
+  width: 85%;
+  margin: 1em auto;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+address {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#adresse {
+  width: 33%;
+}
+
+#contact {
+  letter-spacing: 1rem;
+  width: 33%;
+}
+
+@media only screen and (max-width: 700px) {
+  #contact {
+    letter-spacing: 0.2rem;
+  }
+  
+  #adresse {
+    font-size: 0.6rem;
+    width: 40%;
+  } 
+  
+  #mentions {
+    font-size: 0.8rem;
+  }
+}
+
+#mentions {
+  font-size: smaller;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#mentions:hover {
+  text-decoration: none;
+}
+
+address img {
+  width: 3rem;
+  height: auto;
+}
+
+#phone {
+  width: 1.2rem;
+  height: auto;
+  padding-bottom: 0.9rem;
+}

@@ -1,0 +1,103 @@
+/* Club Page */
+#club {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem auto ;
+  padding-bottom: 2rem;
+  border-bottom: 5px double black;
+  width: 90%;
+}
+
+@media only screen and (max-width: 700px) {
+  #club {
+    flex-direction: column;
+  }
+  #prof {
+    margin-top: 2rem;
+    margin-bottom: 2rem
+  }
+
+  #club #prof embed {
+  display: none;
+  }
+}
+
+#cours {
+  display: flex;
+  border-bottom: 5px double black;
+  width: 80%;
+  margin: 2rem auto;
+  justify-content: space-around;
+}
+
+article {
+  width: 60%;
+  min-height: 80%;
+  margin: 3rem 6rem;
+}
+
+#cours img {
+  height: 10rem;
+  width: auto;
+  align-self: center;/
+}
+
+#horaires {
+  height:fit-content;
+  margin-top: 6rem;
+}
+
+#horaires, #tarifs {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 1rem;
+  width: 25%;
+}
+
+#enfants {
+  background-color: white;
+  color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  #cours {
+    flex-direction: column;
+  }
+
+  #horaires, #tarifs {
+    width: 80%;
+    margin-top: 0;
+  }
+  
+  #enfants {
+    font-size: small;
+  }
+}
+
+#manuel {
+  margin: 0 auto;
+  width: 60%;
+}
+
+#manuel h3 {
+  margin: 2rem;
+  text-decoration: underline;
+}
+
+#manuel p {
+  line-height: 1.8;
+}
+
+#manuel a {
+  color: black;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 700px) {
+  #manuel {
+    width: 80%;
+  }
+  #manuel p {
+    line-height: normal;
+  }
+}
