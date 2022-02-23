@@ -40,5 +40,33 @@ main.addEventListener('click', () => {
   }});
 
 
+// Effacer div stages passés
+
+let date = new Date();
+let stages = document.getElementsByClassName("cadre-affiches");
+let dateArrStr = [];
+let cacher;
+
+
+for (let i = 0; i < stages.length; i++) {
+  let dateStage = stages[i].getAttribute("date");
+    if (typeof dateStage == "string") {
+      dateArrStr = dateStage.split("/");
+      let dateArrNum = [];
+      for (let element of dateArrStr) {
+        dateArrNum.push(parseInt(element, 10));
+      }
+      if (dateArrNum[0] < date.getDate() && dateArrNum[1] - 1 == date.getMonth() && dateArrNum[2] == date.getFullYear()) {
+        stages[i].remove();
+      }
+      if (dateArrNum[1] - 1 < date.getMonth() || dateArrNum[2] < date.getFullYear()) {
+        stages[i].remove()
+      }
+    }
+  }; 
+
+
+
+
 
 

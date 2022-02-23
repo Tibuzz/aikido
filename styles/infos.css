@@ -14,6 +14,13 @@
   padding: 1rem;
 }
 
+@media only screen and (max-width: 700px) {
+  #citation-du-mois {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 
 #citation-du-mois img {
   border-radius: 10px;
@@ -55,7 +62,11 @@
 @media only screen and (max-width: 700px) {
 
   #infos article {
-    width: 85%;
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin: 2rem auto;
+    box-shadow: none;
   }
 }
 
@@ -185,7 +196,7 @@ margin: 0 auto;
   height: 85%;
 }
 
-.cadre-affiches:hover .affiches {
+.cadre-affiches:hover .affiches, #stage-st-pierre:hover .affiches {
   height: 100%;
   width: auto;
 }
@@ -206,6 +217,28 @@ margin: 0 auto;
 
 .cadre-affiches:hover h4 {
   display: none;
+}
+
+#stage-st-pierre h4 {
+  width:95%;
+}
+
+#stage-st-pierre:hover h4, #stage-st-pierre:hover h5 {
+  display: none;
+}
+
+#stage-st-pierre .affiches {
+  height: 75%;
+}
+
+#stage-hendaye .affiches, #stage-luc .affiches {
+  width: 80%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+#stage-hendaye:hover .affiches, #stage-luc:hover .affiches {
+  width: 100%;
 }
 
 .no-affiche {
