@@ -175,9 +175,9 @@ width: 80%;
 margin: 0 auto;
 }
 
-.cadre-affiches {
+.cadre-affiches, .no-affiche, .affiches-paysage {
   width: 20%;
-  min-width: 153px;
+  min-width: 160px;
   height: 238px;
   margin-right: 2rem; 
   margin-bottom: 2rem;
@@ -192,6 +192,10 @@ margin: 0 auto;
   height: 100%;
 }
 
+.cadre-affiches #première-image:hover {
+  width: 100%;
+}
+
 .affiches {
   height: 85%;
 }
@@ -202,7 +206,7 @@ margin: 0 auto;
 }
 
 @media only screen and (max-width: 700px) {
-  .cadre-affiches:hover .affiches {
+  .cadre-affiches:hover .affiches, #stage-st-pierre:hover .affiches {
     height: 100%;
     width: 100%;
   }
@@ -215,7 +219,8 @@ margin: 0 auto;
   line-height: 0.9rem;
 }
 
-.cadre-affiches:hover h4 {
+.cadre-affiches:hover h4, #stage-st-pierre:hover h4, #stage-st-pierre:hover h5,
+.no-affiche:hover h4, .affiches-paysage:hover h4, .affiches-paysage:hover h5 {
   display: none;
 }
 
@@ -223,18 +228,19 @@ margin: 0 auto;
   width:95%;
 }
 
-#stage-st-pierre:hover h4, #stage-st-pierre:hover h5 {
-  display: none;
-}
-
 #stage-st-pierre .affiches {
   height: 75%;
+}
+
+.affiches-paysage {
+  height: 238px;
+  width: 306px;
 }
 
 #stage-hendaye .affiches, #stage-luc .affiches {
   width: 80%;
   height: auto;
-  margin-top: 2rem;
+  margin: 0.5rem auto;
 }
 
 #stage-hendaye:hover .affiches, #stage-luc:hover .affiches {

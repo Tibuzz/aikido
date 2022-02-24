@@ -42,11 +42,9 @@ main.addEventListener('click', () => {
 
 // Effacer div stages passés
 
-let date = new Date();
-let stages = document.getElementsByClassName("cadre-affiches");
+const date = new Date();
+const stages = document.getElementsByClassName("cadre-affiches");
 let dateArrStr = [];
-let cacher;
-
 
 for (let i = 0; i < stages.length; i++) {
   let dateStage = stages[i].getAttribute("date");

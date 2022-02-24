@@ -30,16 +30,23 @@
   justify-content: space-around;
 }
 
-article {
+#cours article {
   width: 60%;
   min-height: 80%;
   margin: 3rem 6rem;
 }
 
+@media  only screen and (max-width: 700px) {
+  #cours article {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+
 #cours img {
   height: 10rem;
   width: auto;
-  align-self: center;/
+  align-self: center;
 }
 
 #horaires {
