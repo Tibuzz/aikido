@@ -1,5 +1,5 @@
 
-
+/*
 // Get the address of active tab 
 const activeTab = window.location.pathname;
 
@@ -37,31 +37,24 @@ mentionsLink.addEventListener('click', hide);
 main.addEventListener('click', () => {
   if (getComputedStyle(cadre).display != "none") {
     cadre.style.display = "none";
-  }});
+  }});*/
 
 
 // Effacer div stages passés
 
 const date = new Date();
 const stages = document.getElementsByClassName("cadre-affiches");
-let dateArrStr = [];
 
-for (let i = 0; i < stages.length; i++) {
-  let dateStage = stages[i].getAttribute("date");
-    if (typeof dateStage == "string") {
-      dateArrStr = dateStage.split("/");
-      let dateArrNum = [];
-      for (let element of dateArrStr) {
-        dateArrNum.push(parseInt(element, 10));
-      }
-      if (dateArrNum[0] < date.getDate() && dateArrNum[1] - 1 == date.getMonth() && dateArrNum[2] == date.getFullYear()) {
-        stages[i].remove();
-      }
-      if (dateArrNum[1] - 1 < date.getMonth() || dateArrNum[2] < date.getFullYear()) {
-        stages[i].remove()
-      }
+for (let i = 1; i < stages.length; i++) {
+  stages[i].dateStage = new Date(stages[i].getAttribute("date"));
+  if (stages[i].dateStage < date) {
+      stages[i].remove();
     }
-  }; 
+  };
+
+let sorted = stages.sort((a,b) => b.dateStage - a.dateStage);
+
+  console.log(sorted);
 
 
 
