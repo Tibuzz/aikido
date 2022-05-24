@@ -77,12 +77,16 @@ h2 {
 @media only screen and (max-width: 480px) {
 
   #photoBig {
-    margin-top: 15rem;
+    padding-top: 15rem;
   }
   
   #photoBig img {
     width: 100%;
     height: auto;
+  }
+
+  #backButton {
+    display: none;
   }
 }
 
