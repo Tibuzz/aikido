@@ -74,28 +74,12 @@ h2 {
   margin-top: 1rem;
 }
 
-@media only screen and (max-width: 480px) {
-
-  #photoBig {
-    padding-top: 15rem;
-  }
-  
-  #photoBig img {
-    width: 100%;
-    height: auto;
-  }
-
-  #backButton {
-    display: none;
-  }
-}
-
 .photosSmall {
   height: 20vh;
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
-  border-top: 2px solid wheat;
+  border-top: 2px solid white;
 }
 
 .photosSmall ul {
@@ -125,4 +109,28 @@ h2 {
 
 .portraits {
   width: 6rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+  #photoBig {
+    padding-top: 15rem;
+  }
+
+  #photoBig img {
+    width: 100%;
+    height: auto;
+  }
+
+  #backButton {
+    display: none;
+  }
+
+  .photosSmall {
+    border-top: none;
+  }
+
+  .photosSmall li {
+    margin-bottom: 0.5rem;
+  }
 }
