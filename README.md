@@ -5,6 +5,6 @@
 Refonte du site du club d’aïkido de St Palais sur Mer.
 
 <br>
-## Technologies
+# Technologies
 ---
-HTML5, CSS3
+HTML5, CSS3, Js, NodeJs
